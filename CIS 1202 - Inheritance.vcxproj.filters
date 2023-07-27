@@ -18,6 +18,9 @@
     <ClInclude Include="Vehicle.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="Car.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Vehicle.cpp">
