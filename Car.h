@@ -1,6 +1,6 @@
 // Raymond Shao
 // CIS 1202 800
-// July 26, 2023
+// July 28, 2023
 
 #pragma once
 
@@ -14,6 +14,7 @@ class Car : public Vehicle  // inheritance
 private: 
 	int numDoors;
 public: 
+    // constructor
     Car();
     Car(string manufacturer, int yearBuilt, int numDoors);
 

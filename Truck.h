@@ -8,11 +8,13 @@
 
 #include "Vehicle.h"
 
-class Truck : public Vehicle {
+class Truck : public Vehicle // inheritance
+{  
 private:
-    int towingCapacity;
+    int towingCapacity; // member var
 
 public:
+    // constructor
     Truck();
     Truck(string manufacturer, int yearBuilt, int towingCapacity);
 

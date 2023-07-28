@@ -10,6 +10,7 @@ using namespace std;
 
 int main() {
     // Part 1 - Vehicle
+    // prompting Vehicle info
     string manufacturer;
     int yearBuilt;
     cout << "Vehicle: " << endl;
@@ -21,13 +22,14 @@ int main() {
 
     Vehicle v(manufacturer, yearBuilt);
     cout << "Vehicle Information:" << endl;
-    v.displayInfo();
+    v.displayInfo();    // display Vehicle info
     cout << endl;
     // Part 2 - Car
+    // prompting Car info
     int numDoors;
     cout << "Car: " << endl;
     cout << "Enter manufacturer: ";
-    cin.ignore();
+    cin.ignore();   // clear characters from input buffer
     getline(cin, manufacturer);
     cout << "Enter year built: ";
     cin >> yearBuilt;
@@ -37,14 +39,15 @@ int main() {
 
     Car c(manufacturer, yearBuilt, numDoors);
     cout << "Car Information:" << endl;
-    c.displayInfo();
+    c.displayInfo();    // display Car info
     cout << endl;
 
     // Part 3 - Truck
+    // prompting truck info
     int towingCapacity;
     cout << "Truck: " << endl;
     cout << "Enter manufacturer: ";
-    cin.ignore();
+    cin.ignore();   // clear characters from input buffer
     getline(cin, manufacturer);
     cout << "Enter year built: ";
     cin >> yearBuilt;
@@ -54,7 +57,7 @@ int main() {
 
     Truck t(manufacturer, yearBuilt, towingCapacity);
     cout << "Truck Information:" << endl;
-    t.displayInfo();
+    t.displayInfo();    // display Truck info
 
     return 0;
 }

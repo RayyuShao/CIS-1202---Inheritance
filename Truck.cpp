@@ -11,6 +11,7 @@ Truck::Truck() : towingCapacity(0) {}
 
 Truck::Truck(string manufacturer, int yearBuilt, int towingCapacity) : Vehicle(manufacturer, yearBuilt), towingCapacity(towingCapacity) {}
 
+// implement getters & setters
 int Truck::getTowingCapacity() const {
     return towingCapacity;
 }

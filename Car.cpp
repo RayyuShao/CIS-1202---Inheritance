@@ -1,6 +1,6 @@
 // Raymond Shao
 // CIS 1202 800
-// July 27, 2023
+// July 28, 2023
 
 #include "Vehicle.h"
 #include "Car.h"
@@ -11,6 +11,7 @@ Car::Car() : numDoors(0) {}
 
 Car::Car(string manufacturer, int yearBuilt, int numDoors) : Vehicle(manufacturer, yearBuilt), numDoors(numDoors) {}
 
+// implement getters & setters
 int Car::getNumDoors() const {
     return numDoors;
 }
