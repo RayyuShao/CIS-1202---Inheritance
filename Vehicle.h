@@ -18,6 +18,8 @@ private:
 public:
     Vehicle();
     Vehicle(string manufacturer, int yearBuilt);
+
+    // getters & setters
     string getManufacturer() const;
     void setManufacturer(string manufacturer);
     int getYearBuilt() const;

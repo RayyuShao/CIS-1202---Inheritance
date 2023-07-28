@@ -9,14 +9,18 @@
 
 #include "Vehicle.h"
 
-class Car {
+class Car : public Vehicle  // inheritance
+{
 private: 
 	int numDoors;
 public: 
     Car();
     Car(string manufacturer, int yearBuilt, int numDoors);
+
+    // getter and setter for numDoors
     int getNumDoors() const;
     void setNumDoors(int numDoors);
+
     void displayInfo() const;
 };
 
